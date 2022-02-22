@@ -34,3 +34,6 @@
 /cmake-build-release/
 .idea
 /build/
+/out/Approximation/
+/out/Closure/
+/out/Other/
