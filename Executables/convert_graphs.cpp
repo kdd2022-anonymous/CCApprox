@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
             auto start = std::chrono::system_clock::now();
             GraphData data = GraphData(stripped_path + extension);
             GraphFunctions::GetLargestComponent(data, true);
-            data.setName(file_path.stem().string());
+            data.setName(file_path.stem().string() + "_component");
             //data.save_edges(entry.path().parent_path().string() + "/");
             data.save_bin(file_path.parent_path().string() + "/");
             size_t nodes = data.nodes();
@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
             std::stringstream sstream;
             double time = (double) std::chrono::duration_cast<std::chrono::milliseconds>((std::chrono::system_clock::now() - start)).count() / 1000.0;
             sstream << "Finished conversion of " << data.getName() << " in " << time << "s" << std::endl;
-            sstream << "Written to " << stripped_path << ".bin" << std::endl;
+            sstream << "Written to " << file_path.parent_path().string() + "/" + data.getName() << ".bin" << std::endl;
             StaticFunctions::PrintStream(sstream);
             fileEvaluation.headerValueInsert({"Graph", "Size", "Edges", "Density", "Conversion Time"},
                                              {data.getName(),

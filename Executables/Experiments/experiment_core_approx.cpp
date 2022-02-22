@@ -279,7 +279,7 @@ void overlap_eval(OverlapApproxParams& params) {
                 stripped_paths.emplace_back(stripped_path);
             }
         }
-        else if (entry.path().extension() == ".core") {
+        else if (entry.path().extension() == ".bin" && std::filesystem::is_regular_file(stripped_path + ".core")) {
             stripped_paths.emplace_back(stripped_path);
         }
     }
