@@ -32,12 +32,12 @@
     
        ```./ExpApproxCore -i ../../GraphData/RealWorld/ --generators 10 --threshold 0.01 --threads 3 --outer_loop 1 --no_tree --large_graphs --file_name iteration__large```
    
-       | Optional Arguments | ```-i```  | ```-o```  | ```-t```  | ```--generators``` | ```--generator_seed``` | ```--threshold``` | ```--core_iterations```  | ```--samples``` | ```--sample_seed```  | ```--max_nodes``` | ```--max_edges``` |
+       | Optional Arguments | ```-i```  | ```-o```  | ```--threads```  | ```--generators``` | ```--generator_seed``` | ```--threshold``` | ```--core_iterations```  | ```--samples``` | ```--sample_seed```  | ```--max_nodes``` | ```--max_edges``` |
        | :---:   | :-: | :-: | :-: | :------------: | :-----------------: | :------------------: | :------------------: | :------------: | :------------: | :------------: | :------------: |
        | Seconds | input path | output path | thread num | generator sizes | generator seed | threshold sizes | iterations of the core | number of samples | sample seed | max graph size | max graph edges |
    5. ```./ExpExactCore``` for exact core computation
     
-       | Optional Arguments | ```-i```  | ```-t```  | ```--generators``` | ```--generator_seed``` | ```--core_iterations``` | ```--max_nodes``` | ```--max_edges``` |
+       | Optional Arguments | ```-i```  | ```--threads```  | ```--generators``` | ```--generator_seed``` | ```--core_iterations``` | ```--max_nodes``` | ```--max_edges``` |
        | :---:   | :-: | :-: | :------------: | :-----------------: | :------------------: | :------------: | :------------: |
        | Seconds | input path | thread num | generator number | generator seed | iterations of the core | max graph size | max graph edges |
        
