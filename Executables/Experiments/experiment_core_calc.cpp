@@ -147,7 +147,7 @@ int main(int argc, char *argv[]) {
         if (std::strcmp(argv[i], "-o") == 0){
             params.out_path = std::string(argv[i+1]);
         }
-        if (std::strcmp(argv[i], "-t") == 0){
+        if (std::strcmp(argv[i], "--threads") == 0){
             omp_set_num_threads(atoi(argv[i+1]));
         }
         if (std::strcmp(argv[i], "--generators") == 0){
