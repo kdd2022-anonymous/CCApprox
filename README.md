@@ -41,10 +41,11 @@
        | Seconds | input path | output path | thread num | generator sizes | generator seed | threshold sizes | iterations of the core | number of samples | sample seed | max graph size | max graph edges |
        ---
    5. > ```./ExpExactCore``` for exact core computation to recalculate the cores for the graphs use: ```./ExpExactCore -i ../../GraphData/ --threads 8 --recalculate```
-    
+       ---
        | Optional Arguments | ```-i```  | ```--threads```  | ```--generators``` | ```--generator_seed``` | ```--core_iterations``` | ```--max_nodes``` | ```--max_edges``` |
        | :---:   | :-: | :-: | :------------: | :-----------------: | :------------------: | :------------: | :------------: |
        | Seconds | input path | thread num | generator number | generator seed | iterations of the core | max graph size | max graph edges |
+       ---
        
        
        
