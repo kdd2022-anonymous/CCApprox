@@ -42,10 +42,14 @@ int main(int argc, char *argv[]) {
             extension = ".txt";
         }
         if (!extension.empty()) {
+            if (std::filesystem::is_directory("../out/Other/")) {
+                std::filesystem::create_directory("../out/Other/");
+            }
             FileEvaluation fileEvaluation = FileEvaluation("../out/Other/", "converted_graphs");
             std::string stripped_path =
                     file_path.parent_path().string() + "/" + file_path.stem().string();
             //GraphData::Update(stripped_path + ".txt");
+            auto start = std::chrono::system_clock::now();
             GraphData data = GraphData(stripped_path + extension);
             GraphFunctions::GetLargestComponent(data, true);
             data.setName(file_path.stem().string());
@@ -62,7 +66,9 @@ int main(int argc, char *argv[]) {
                                              });
             fileEvaluation.save();
             std::stringstream sstream;
-            sstream << "Finished conversion of " << stripped_path + extension << std::endl;
+            double time = (double) std::chrono::duration_cast<std::chrono::milliseconds>((std::chrono::system_clock::now() - start)).count() / 1000.0;
+            sstream << "Finished conversion of " << data.getName() << " in " << time << "s" << std::endl;
+            sstream << "Written to " << stripped_path << ".bin" << std::endl;
             StaticFunctions::PrintStream(sstream);
         }
     }
