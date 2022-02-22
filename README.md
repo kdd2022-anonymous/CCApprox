@@ -1,8 +1,8 @@
 # CCApprox
 
-**Results of Experiments:** [here](out/Results/)
+**[Results of Experiments](out/Results/)**
 
-**Precomputed cores and core information** [here](out/Results/CoreInfo)
+**[Precomputed cores and core information](out/Results/CoreInfo)** 
 
 **Usage of Code:**
 
