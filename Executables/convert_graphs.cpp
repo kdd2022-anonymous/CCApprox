@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
             extension = ".txt";
         }
         if (!extension.empty()) {
-            if (std::filesystem::is_directory("../out/Other/")) {
+            if (!std::filesystem::is_directory("../out/Other/")) {
                 std::filesystem::create_directory("../out/Other/");
             }
             FileEvaluation fileEvaluation = FileEvaluation("../out/Other/", "converted_graphs");
@@ -58,18 +58,19 @@ int main(int argc, char *argv[]) {
             size_t nodes = data.nodes();
             size_t edges = data.edges();
             double density = (double) edges / ((double) (nodes * (nodes - 1)) / 2);
-            fileEvaluation.headerValueInsert({"Graph", "Size", "Edges", "Density"},
-                                             {data.getName(),
-                                              std::to_string(nodes),
-                                              std::to_string(edges),
-                                              std::to_string(density)
-                                             });
-            fileEvaluation.save();
             std::stringstream sstream;
             double time = (double) std::chrono::duration_cast<std::chrono::milliseconds>((std::chrono::system_clock::now() - start)).count() / 1000.0;
             sstream << "Finished conversion of " << data.getName() << " in " << time << "s" << std::endl;
             sstream << "Written to " << stripped_path << ".bin" << std::endl;
             StaticFunctions::PrintStream(sstream);
+            fileEvaluation.headerValueInsert({"Graph", "Size", "Edges", "Density", "Conversion Time"},
+                                             {data.getName(),
+                                              std::to_string(nodes),
+                                              std::to_string(edges),
+                                              std::to_string(density),
+                                              std::to_string(time),
+                                             });
+            fileEvaluation.save();
         }
     }
 }

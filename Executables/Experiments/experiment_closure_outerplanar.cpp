@@ -47,6 +47,9 @@ void closure_runtime(int number) {
             size_t tree_time = 0;
             size_t cgraph_time = 0;
             int input_size = size.first / 100;
+            if (!std::filesystem::is_directory("../out/Closure/")){
+                std::filesystem::create_directory("../out/Closure/");
+            }
             FileEvaluation fileEvaluation = FileEvaluation("../out/Closure/", out_name);
             OuterplanarGraphStatistics statistics;
             std::vector<std::string> values;

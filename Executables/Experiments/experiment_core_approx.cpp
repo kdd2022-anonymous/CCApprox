@@ -319,6 +319,9 @@ void overlap_eval(OverlapApproxParams& params) {
         } else {
             exact_computation = false;
         }
+        if (!std::filesystem::is_directory(params.out_path)){
+            std::filesystem::create_directory(params.out_path);
+        }
         FileEvaluation eval = FileEvaluation(params.out_path, params.eval_name, ".csv");
 
         double exact_runtime = -1;

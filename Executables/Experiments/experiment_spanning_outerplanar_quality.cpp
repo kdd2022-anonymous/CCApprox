@@ -15,6 +15,9 @@ void quality_experiment(){
             }
             auto params = Experiments::TestParameter{graph_sizes, 0, 99, true, 1};
             std::string out_name = "sampling_quality";
+            if (!std::filesystem::is_directory("../out/Sampling/")){
+                std::filesystem::create_directory("../out/Sampling/");
+            }
             Experiments::OuterplanarSampling("../out/Sampling/" + out_name, params);
     }
 }
