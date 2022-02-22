@@ -10,7 +10,7 @@
 2. Create folders *GraphData* and *ExternalLibraries* in the parent folder of *CCApprox*: ```mkdir ../GraphData && mkdir ../ExternalLibraries```
 3. Move precomputed cores to the *GraphData* folder: ```cp -a out/Results/CoreInfo/. ../GraphData/``` 
 4. Download the [SNAP 6.0 library](http://snap.stanford.edu/releases/Snap-6.0.zip) and unpack in *ExternalLibraries* folder
-5. Download the graphs from http://snap.stanford.edu/data/index.html and save unpacked *.txt* in *GraphData* folder or sub-folders
+5. Download the graphs from http://snap.stanford.edu/data/index.html and save unpacked *.txt* in the *GraphData* folder
 6. Create build inside *CCAprox* folder and compile:
    ```mkdir build && cd build && cmake .. && make -j 12```
 7. Convert the graphs: ```./ConvertGraphs```
