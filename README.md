@@ -2,7 +2,7 @@
 
 **Results of Experiments:** [here](out/Results/)
 
-**Precomputed cores and core information** [here](out/Results/Cores)
+**Precomputed cores and core information** [here](out/Results/CoreInfo)
 
 **Usage of Code:**
 
