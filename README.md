@@ -10,12 +10,13 @@
 3. > Create build inside *CCAprox* folder and compile:
    ```mkdir build && cd build && cmake .. && make -j 4```
 4. > Download the graphs from http://snap.stanford.edu/data/index.html and save unpacked *.txt* in the *GraphData* folder
-5. > Convert the graphs: ```./ConvertGraphs```
-6. > Compile and run the executables:
+5. > Convert the graphs to the used format: ```./ConvertGraphs```
+6. > Move precomputed cores to the right place: ```cp -a out/Results/CoreInfo/. ../GraphData/```
+7. > Compile and run the executables:
    1. > ```./ExpSamplingRuntime``` for sampling runtime experiment (output is written to *out/Results/Closure/*)
    2. > ```./ExpSamplingQuality``` for sampling quality experiment (output is written to *out/Results/Sampling/*)
    3. > ```./ExpClosureRuntime``` for closure runtime experiment   (output is written to *out/Results/Sampling/*)
-   4. > ```./ExpApproxCore``` for approximate core computation (either you have to compute the cores first (see 5.) or use the precomputed cores by executing: ```cp -a out/Results/CoreInfo/. ../GraphData/```). To run the experiments from the paper use the below commands (output is written to *out/Results/Approximation/*)    
+   4. > ```./ExpApproxCore``` for approximate core computation (either you have to compute the cores first (see v.) or use the precomputed cores). To run the experiments from the paper use the below commands (output is written to *out/Results/Approximation/*)    
    
        >> *Grid Search*
     
