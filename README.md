@@ -12,7 +12,7 @@
 4. Download the [SNAP 6.0 library](http://snap.stanford.edu/releases/Snap-6.0.zip) and unpack in *ExternalLibraries* folder
 5. Download the graphs from http://snap.stanford.edu/data/index.html and save unpacked *.txt* in the *GraphData* folder
 6. Create build inside *CCAprox* folder and compile:
-   ```mkdir build && cd build && cmake .. && make -j 12```
+   ```mkdir build && cd build && cmake .. && make -j 4```
 7. Convert the graphs: ```./ConvertGraphs```
 8. Compile and run the executables:
    1. ```./ExpSamplingRuntime``` for sampling runtime experiment
