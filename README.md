@@ -18,7 +18,7 @@
    1. ```./ExpSamplingRuntime``` for sampling runtime experiment
    2. ```./ExpSamplingQuality``` for sampling quality experiment
    3. ```./ExpClosureRuntime``` for closure runtime experiment
-   4. ```./ExpApproxCore``` for approximate core computation      
+   4. ```./ExpApproxCore``` for approximate core computation with parameters used for the results, see below      
    
       *Grid Search*
     
