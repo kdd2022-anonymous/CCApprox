@@ -1,8 +1,6 @@
 # CCApprox
 
-**Results of Experiments:**
-
--see *out/Results/*
+**Results of Experiments:** [here](out/Results/)
 
 **Usage of Code:**
 
