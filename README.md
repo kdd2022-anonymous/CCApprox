@@ -1,5 +1,5 @@
 
-## [Results of Experiments](out/Results/)
+## [Results of the Experiments](out/Results/)
 
 ## [Precomputed cores and core information](out/Results/CoreInfo/)
 
