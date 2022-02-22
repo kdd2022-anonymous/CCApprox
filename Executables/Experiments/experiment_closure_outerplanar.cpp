@@ -17,12 +17,12 @@ void closure_runtime(int number) {
                                         "Edges",
                                         "Density",
                                         "Input Size",
-                                        "O1 Time",
+                                        "C1 Time",
                                         "O2 Time",
                                         "O2 Generation Time",
-                                        "O2 Closure Time",
-                                        "Tree Time",
-                                        "Graph Time",
+                                        "C2 Time",
+                                        "CTree Time",
+                                        "CGraph Time",
                                         "Samples"};
 
 #pragma omp parallel for default(none) shared(n, headers, number, out_name)
