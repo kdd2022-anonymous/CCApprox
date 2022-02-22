@@ -205,7 +205,7 @@ public:
 
     static int getMaxDegree(const SIMPLE_GRAPH &graph);
 
-    static void GetLargestComponent(GraphData &data);
+    static void GetLargestComponent(GraphData &data, bool renumber = false);
 
     static void analyse_graph(const PUNGraph &graph, const std::string &name = "", bool component_analysis = false,
                               FileEvaluation *fileEvaluation = nullptr);

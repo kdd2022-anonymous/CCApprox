@@ -1171,7 +1171,7 @@ void GraphFunctions::generateNeighborVector(const SIMPLE_GRAPH& graph, std::vect
     std::iota(neighborVector.begin(), neighborVector.end(), 0);
 }
 
-void GraphFunctions::GetLargestComponent(GraphData &data) {
+void GraphFunctions::GetLargestComponent(GraphData &data, bool renumber) {
     TCnComV ConComps;
     TSnap::GetWccs(data.get_graph(), ConComps);
     if (ConComps.Len() == 1) {
@@ -1187,7 +1187,7 @@ void GraphFunctions::GetLargestComponent(GraphData &data) {
                 biggestComponent = &ConComps[i];
             }
         }
-        PUNGraph biggestComponentGraph = TSnap::GetSubGraph(data.get_graph(), biggestComponent->NIdV);
+        PUNGraph biggestComponentGraph = TSnap::GetSubGraph(data.get_graph(), biggestComponent->NIdV, renumber);
         GraphData Component = GraphData(GraphFunctions::ResetGraphIds(biggestComponentGraph));
         Component.setName(data.getName() + "_component");
         data = Component;

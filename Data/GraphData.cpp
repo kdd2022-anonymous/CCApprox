@@ -33,6 +33,12 @@ GraphData::GraphData(const std::string &graphPath) : Data<PUNGraph>(new TUNGraph
                 else{
                     src = std::stoi(a);
                     dest = std::stoi(b);
+                    if (!this->graph()->IsNode(src)){
+                        this->graph()->AddNode(src);
+                    }
+                    if (!this->graph()->IsNode(dest)){
+                        this->graph()->AddNode(dest);
+                    }
                     this->get_graph()->AddEdge(src, dest);
                 }
             }
