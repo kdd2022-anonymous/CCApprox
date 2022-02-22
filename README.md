@@ -30,7 +30,7 @@
     
        ```./ExpApproxCore -i ../../GraphData/ --generators 10 --threshold 0.01 --threads 3 --outer_loop 1 --no_tree --large_graphs --file_name iteration__large```
        
-       *Large Graphs*
+       *Very large Graphs* (compute approx core of the very large graphs)
     
        ```./ExpApproxCore -i ../../GraphData/RealWorld/ --generators 5 10 --threshold 0.01 0.02 --threads 2 --outer_loop 0 --save_load_samples --no_tree --no_core --file_name large_graphs```
       
