@@ -18,7 +18,7 @@
    1. ```./ExpSamplingRuntime``` for sampling runtime experiment (output is found in *out/Results/Closure/*)
    2. ```./ExpSamplingQuality``` for sampling quality experiment (output is found in *out/Results/Sampling/*)
    3. ```./ExpClosureRuntime``` for closure runtime experiment   (output is found in *out/Results/Sampling/*)
-   4. ```./ExpApproxCore``` for approximate core computation with parameters used for the results, see below (output is found in *out/Results/Approximation*)    
+   4. ```./ExpApproxCore``` for approximate core computation with parameters used for the results, see below (output is found in *out/Results/Approximation/*)    
    
       *Grid Search*
     
