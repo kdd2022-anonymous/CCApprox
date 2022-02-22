@@ -18,16 +18,16 @@
    1. ```./ExpSamplingRuntime``` for sampling runtime experiment
    2. ```./ExpSamplingQuality``` for sampling quality experiment
    3. ```./ExpClosureRuntime``` for closure runtime experiment
-   4. ```./ExpExactCore``` for exact core computation
-    
-       | Optional Arguments | ```-i```  | ```-t```  | ```--generators``` | ```--generator_seed``` | ```--core_iterations``` | ```--max_nodes``` | ```--max_edges``` |
-       | :---:   | :-: | :-: | :------------: | :-----------------: | :------------------: | :------------: | :------------: |
-       | Seconds | input path | thread num | generator number | generator seed | iterations of the core | max graph size | max graph edges |
-   5. ```./ExpApproxCore``` for approximate core computation
+   4. ```./ExpApproxCore``` for approximate core computation
    
        | Optional Arguments | ```-i```  | ```-o```  | ```-t```  | ```--generators``` | ```--generators_end```| ```--generators_step``` | ```--generator_seed``` | ```--threshold``` | ```--threshold_end``` | ```--threshold_step``` | ```--core_iterations```  | ```--samples``` | ```--sample_seed```  | ```--max_nodes``` | ```--max_edges``` |
        | :---:   | :-: | :-: | :-: | :------------: | :-----------------: | :------------------: | :------------------: | :------------------: | :------------------: | :------------------: | :------------------: | :------------: | :------------: | :------------: | :------------: |
        | Seconds | input path | output path | thread num | generator first size | generator last size | generator step size | generator seed | threshold smallest size | threshold largest size | threshold step | iterations of the core | number of samples | sample seed | max graph size | max graph edges |
+   5. ```./ExpExactCore``` for exact core computation
+    
+       | Optional Arguments | ```-i```  | ```-t```  | ```--generators``` | ```--generator_seed``` | ```--core_iterations``` | ```--max_nodes``` | ```--max_edges``` |
+       | :---:   | :-: | :-: | :------------: | :-----------------: | :------------------: | :------------: | :------------: |
+       | Seconds | input path | thread num | generator number | generator seed | iterations of the core | max graph size | max graph edges |
        
        *Grid Search*
     
@@ -62,3 +62,4 @@
        ```./ExpApproxCore -i ../../GraphData/RealWorld/ --generators 10 --threshold 0.1 --threads 3 --outer_loop 2 --large_graphs --no_tree --file_name iteration_4_large```
 
        ```./ExpApproxCore -i ../../GraphData/RealWorld/ --generators 10 --threshold 0.25 --threads 3 --outer_loop 2 --large_graphs --no_tree --file_name iteration_5_large```
+       
