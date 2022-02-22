@@ -4,7 +4,7 @@
 
 **[Precomputed cores and core information](out/Results/CoreInfo/)** 
 
-**Usage of Code:**
+**Code usage and reproduction of the results:**
 
 1. Clone this repository and navigate into *CCApprox* folder: ```git clone https://github.com/kdd2022-anonymous/CCApprox.git && cd CCApprox```
 2. Create folders *GraphData* and *ExternalLibraries* with the Snap-6.0 library in the parent folder of *CCApprox*: ```mkdir ../GraphData && mkdir ../ExternalLibraries && unzip Snap-6.0.zip -d ../ExternalLibraries/``` (the original version can be found [here](http://snap.stanford.edu/releases/Snap-6.0.zip)
