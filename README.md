@@ -1,4 +1,3 @@
-# Instructions
 
 ## [Results of Experiments](out/Results/)
 
