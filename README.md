@@ -2,7 +2,7 @@
 
 **[Results of Experiments](out/Results/)**
 
-**[Precomputed cores and core information](out/Results/CoreInfo)** 
+**[Precomputed cores and core information](out/Results/CoreInfo/)** 
 
 **Usage of Code:**
 
@@ -15,10 +15,10 @@
    ```mkdir build && cd build && cmake .. && make -j 4```
 7. Convert the graphs: ```./ConvertGraphs```
 8. Compile and run the executables:
-   1. ```./ExpSamplingRuntime``` for sampling runtime experiment
-   2. ```./ExpSamplingQuality``` for sampling quality experiment
-   3. ```./ExpClosureRuntime``` for closure runtime experiment
-   4. ```./ExpApproxCore``` for approximate core computation with parameters used for the results, see below      
+   1. ```./ExpSamplingRuntime``` for sampling runtime experiment (output is found in *out/Results/Closure/*)
+   2. ```./ExpSamplingQuality``` for sampling quality experiment (output is found in *out/Results/Sampling/*)
+   3. ```./ExpClosureRuntime``` for closure runtime experiment   (output is found in *out/Results/Sampling/*)
+   4. ```./ExpApproxCore``` for approximate core computation with parameters used for the results, see below (output is found in *out/Results/Approximation*)    
    
       *Grid Search*
     
