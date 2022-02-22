@@ -1,0 +1,16 @@
+,Size,Edges,Density,Input Size,C1 Time,O2 Time,O2 Generation Time,C2 Time,CTree Time,CGraph Time,Samples,Avg. Component Number,Std. Component Number,Avg. Biggest Component,Std. Biggest Component,Avg. Face Number,Std. Face Number
+,1000,1080,0.008000,10,0.575449,1.463988,1.290736,0.173252,0.068248,32.004544,100,249.460000,25.409940,276.300000,108.019405,28.900000,11.236215
+,Size,Edges,Density,Input Size,C1 Time,O2 Time,O2 Generation Time,C2 Time,CTree Time,CGraph Time,Samples,Avg. Component Number,Std. Component Number,Avg. Biggest Component,Std. Biggest Component,Avg. Face Number,Std. Face Number
+,1000,1062,0.006000,10,0.570112,1.466382,1.288534,0.177848,0.077520,27.289463,100,319.480000,24.077937,245.300000,114.848385,21.300000,9.937685
+,Size,Edges,Density,Input Size,C1 Time,O2 Time,O2 Generation Time,C2 Time,CTree Time,CGraph Time,Samples,Avg. Component Number,Std. Component Number,Avg. Biggest Component,Std. Biggest Component,Avg. Face Number,Std. Face Number
+,1000,1095,0.010000,10,0.592274,1.507701,1.320635,0.187066,0.072433,34.823413,100,208.250000,24.716320,271.930000,108.211004,31.690000,12.718153
+,Size,Edges,Density,Input Size,C1 Time,O2 Time,O2 Generation Time,C2 Time,CTree Time,CGraph Time,Samples,Avg. Component Number,Std. Component Number,Avg. Biggest Component,Std. Biggest Component,Avg. Face Number,Std. Face Number
+,1000,1109,0.012000,10,0.587598,1.550155,1.372887,0.177268,0.084199,37.751196,100,177.290000,21.930697,276.930000,117.921499,35.360000,14.746696
+,Size,Edges,Density,Input Size,C1 Time,O2 Time,O2 Generation Time,C2 Time,CTree Time,CGraph Time,Samples,Avg. Component Number,Std. Component Number,Avg. Biggest Component,Std. Biggest Component,Avg. Face Number,Std. Face Number
+,1000,1122,0.014000,10,0.600492,1.592196,1.417718,0.174478,0.078263,39.650576,100,160.180000,20.965763,241.060000,105.512776,34.140000,14.330176
+,Size,Edges,Density,Input Size,C1 Time,O2 Time,O2 Generation Time,C2 Time,CTree Time,CGraph Time,Samples,Avg. Component Number,Std. Component Number,Avg. Biggest Component,Std. Biggest Component,Avg. Face Number,Std. Face Number
+,1000,1133,0.016000,10,0.611272,1.551342,1.373995,0.177347,0.081768,41.995564,100,151.190000,18.539445,212.750000,82.175272,33.070000,12.219586
+,Size,Edges,Density,Input Size,C1 Time,O2 Time,O2 Generation Time,C2 Time,CTree Time,CGraph Time,Samples,Avg. Component Number,Std. Component Number,Avg. Biggest Component,Std. Biggest Component,Avg. Face Number,Std. Face Number
+,1000,1146,0.018000,10,0.666466,1.619420,1.452277,0.167143,0.097620,44.252223,100,139.840000,20.898369,201.050000,76.494190,32.710000,12.202248
+,Size,Edges,Density,Input Size,C1 Time,O2 Time,O2 Generation Time,C2 Time,CTree Time,CGraph Time,Samples,Avg. Component Number,Std. Component Number,Avg. Biggest Component,Std. Biggest Component,Avg. Face Number,Std. Face Number
+,1000,1154,0.020000,10,0.621109,1.611943,1.419428,0.192515,0.087896,44.842166,100,130.670000,18.717493,205.590000,63.288835,35.310000,10.948636

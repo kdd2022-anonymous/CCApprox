@@ -18,9 +18,9 @@ void closure_runtime(int number) {
                                         "Density",
                                         "Input Size",
                                         "C1 Time",
-                                        "O2 Time",
-                                        "O2 Generation Time",
                                         "C2 Time",
+                                        "O2 Generation Time",
+                                        "O2 Closure Time",
                                         "CTree Time",
                                         "CGraph Time",
                                         "Samples"};
