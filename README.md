@@ -18,7 +18,8 @@
    3. > ```./ExpClosureRuntime``` for closure runtime experiment   (output is written to *out/Results/Sampling/*)
    4. > ```./ExpApproxCore``` for approximate core computation (either you have to compute the cores first (see 5.) or use the precomputed cores by executing: ```cp -a out/Results/CoreInfo/. ../GraphData/```). To run the experiments from the paper use the below commands (output is written to *out/Results/Approximation/*)    
    
-      > *Grid Search*
+       ---
+       *Grid Search*
     
        ```./ExpApproxCore -i ../../GraphData/ --generators 5 10 100 500 1000 --threshold 0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 0.09 0.1 0.15 --threads 2 --outer_loop 0 --small_graphs --no_tree --file_name grid_search_small```
     
@@ -38,6 +39,7 @@
        | Optional Arguments | ```-i```  | ```-o```  | ```--threads```  | ```--generators``` | ```--generator_seed``` | ```--threshold``` | ```--core_iterations```  | ```--samples``` | ```--sample_seed```  | ```--max_nodes``` | ```--max_edges``` |
        | :---:   | :-: | :-: | :-: | :------------: | :-----------------: | :------------------: | :------------------: | :------------: | :------------: | :------------: | :------------: |
        | Seconds | input path | output path | thread num | generator sizes | generator seed | threshold sizes | iterations of the core | number of samples | sample seed | max graph size | max graph edges |
+       ---
    5. > ```./ExpExactCore``` for exact core computation to recalculate the cores for the graphs use: ```./ExpExactCore -i ../../GraphData/ --threads 8 --recalculate```
     
        | Optional Arguments | ```-i```  | ```--threads```  | ```--generators``` | ```--generator_seed``` | ```--core_iterations``` | ```--max_nodes``` | ```--max_edges``` |
