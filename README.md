@@ -7,16 +7,16 @@
 ## Code usage and reproduction of the results:
 
 1. > Clone this repository and navigate into *CCApprox* folder: ```git clone https://github.com/kdd2022-anonymous/CCApprox.git && cd CCApprox```
-2. Create folders *GraphData* and *ExternalLibraries* with the Snap-6.0 library in the parent folder of *CCApprox*: ```mkdir ../GraphData && mkdir ../ExternalLibraries && unzip Snap-6.0.zip -d ../ExternalLibraries/``` (the original version can be found [here](http://snap.stanford.edu/releases/Snap-6.0.zip)
-5. Create build inside *CCAprox* folder and compile:
+2. > Create folders *GraphData* and *ExternalLibraries* with the Snap-6.0 library in the parent folder of *CCApprox*: ```mkdir ../GraphData && mkdir ../ExternalLibraries && unzip Snap-6.0.zip -d ../ExternalLibraries/``` (the original version can be found [here](http://snap.stanford.edu/releases/Snap-6.0.zip)
+3. > Create build inside *CCAprox* folder and compile:
    ```mkdir build && cd build && cmake .. && make -j 4```
-6. Download the graphs from http://snap.stanford.edu/data/index.html and save unpacked *.txt* in the *GraphData* folder
-7. Convert the graphs: ```./ConvertGraphs```
-8. Compile and run the executables:
-   1. ```./ExpSamplingRuntime``` for sampling runtime experiment (output is written to *out/Results/Closure/*)
-   2. ```./ExpSamplingQuality``` for sampling quality experiment (output is written to *out/Results/Sampling/*)
-   3. ```./ExpClosureRuntime``` for closure runtime experiment   (output is written to *out/Results/Sampling/*)
-   4. ```./ExpApproxCore``` for approximate core computation (either you have to compute the cores first (see 5.) or use the precomputed cores by executing: ```cp -a out/Results/CoreInfo/. ../GraphData/```). To run the experiments from the paper use the below commands (output is written to *out/Results/Approximation/*)    
+4. > Download the graphs from http://snap.stanford.edu/data/index.html and save unpacked *.txt* in the *GraphData* folder
+5. > Convert the graphs: ```./ConvertGraphs```
+6. > Compile and run the executables:
+   1. > ```./ExpSamplingRuntime``` for sampling runtime experiment (output is written to *out/Results/Closure/*)
+   2. > ```./ExpSamplingQuality``` for sampling quality experiment (output is written to *out/Results/Sampling/*)
+   3. > ```./ExpClosureRuntime``` for closure runtime experiment   (output is written to *out/Results/Sampling/*)
+   4. > ```./ExpApproxCore``` for approximate core computation (either you have to compute the cores first (see 5.) or use the precomputed cores by executing: ```cp -a out/Results/CoreInfo/. ../GraphData/```). To run the experiments from the paper use the below commands (output is written to *out/Results/Approximation/*)    
    
       *Grid Search*
     
@@ -38,7 +38,7 @@
        | Optional Arguments | ```-i```  | ```-o```  | ```--threads```  | ```--generators``` | ```--generator_seed``` | ```--threshold``` | ```--core_iterations```  | ```--samples``` | ```--sample_seed```  | ```--max_nodes``` | ```--max_edges``` |
        | :---:   | :-: | :-: | :-: | :------------: | :-----------------: | :------------------: | :------------------: | :------------: | :------------: | :------------: | :------------: |
        | Seconds | input path | output path | thread num | generator sizes | generator seed | threshold sizes | iterations of the core | number of samples | sample seed | max graph size | max graph edges |
-   5. ```./ExpExactCore``` for exact core computation to recalculate the cores for the graphs use: ```./ExpExactCore -i ../../GraphData/ --threads 8 --recalculate```
+   5. > ```./ExpExactCore``` for exact core computation to recalculate the cores for the graphs use: ```./ExpExactCore -i ../../GraphData/ --threads 8 --recalculate```
     
        | Optional Arguments | ```-i```  | ```--threads```  | ```--generators``` | ```--generator_seed``` | ```--core_iterations``` | ```--max_nodes``` | ```--max_edges``` |
        | :---:   | :-: | :-: | :------------: | :-----------------: | :------------------: | :------------: | :------------: |
